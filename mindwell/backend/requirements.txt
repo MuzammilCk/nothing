@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+elevenlabs
+google-cloud-aiplatform
+google-cloud-speech
+librosa
+numpy
+soundfile
+requests
+pydantic

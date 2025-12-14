@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell | AI Mental Health Screening</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card" id="mainCard">
+            <h1>MindWell</h1>
+            <p class="subtitle">AI Voice Screening & Support</p>
+            
+            <div style="margin: 2rem 0;">
+                <button id="micBtn" class="mic-btn">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <div id="statusText" class="status-text">Tap to Speak</div>
+            </div>
+
+            <div id="resultSection" class="result-section">
+                <div id="scoreBadge" class="score-badge">Calculating...</div>
+                
+                <div class="response-box">
+                    <p id="responseText">Analysis complete.</p>
+                </div>
+
+                <div id="helplineSection" class="helplines hidden">
+                    <h3>⚠️ Professional Help Recommended</h3>
+                    <br>
+                    <div class="helpline-item">
+                        <span>Tele-MANAS (24/7)</span>
+                        <a href="tel:14416" class="phone-link">14416</a>
+                    </div>
+                    <div class="helpline-item">
+                        <span>iCALL</span>
+                        <a href="tel:02225521111" class="phone-link">022-2552-1111</a>
+                    </div>
+                </div>
+                
+                <button onclick="location.reload()" style="margin-top: 2rem; background: transparent; border: 1px solid rgba(255,255,255,0.3); color: white; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">
+                    Start New Session
+                </button>
+            </div>
+            
+            <div class="footer" style="margin-top: 3rem; font-size: 0.8rem; color: #666;">
+                <p>Not a medical diagnosis. Only for screening.<br>Data is not stored permanently.</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
